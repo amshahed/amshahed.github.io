@@ -1,73 +1,88 @@
 {
-    "basic_info": {
-      "name": "A M Shahed Hasan",
-      "titles": [ "Software Engineer", "Full-Stack Developer", "Backend Developer", "Professional Procrastinator" ],
-      "social": [
-        {
-          "name": "github",
-          "url": "https://github.com/amshahedhasan",
-          "class": "fab fa-github"
-        },
-        {
-          "name": "linkedin",
-          "url": "https://www.linkedin.com/in/shahedhasan",
-          "class": "fab fa-linkedin"
-        },
-        {
-          "name": "instagram",
-          "url": "https://www.instagram.com/amshahedhasan",
-          "class": "fab fa-instagram"
-        }
-      ],
-      "image": "profile.jpeg"
-    },
-    "skills": {
-      "icons": [
-        {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
-          "level": "95"
-        },
-        {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
-        },
-        {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
-          "level": "80"
-        },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
-        },
-        {
-          "name": "Sass",
-          "class": "devicon-sass-original",
-          "level": "75"
-        },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
-        },
-        {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
-          "level": "65"
-        },
-        {
-          "name": "MySql",
-          "class": "devicon-mysql-plain",
-          "level": "60"
-        }
-      ]
-    }
+  "basic_info": {
+    "name": "A M Shahed Hasan",
+    "titles": [
+      "Software Engineer",
+      "Full-Stack Developer",
+      "Backend Developer",
+      "Professional Procrastinator"
+    ],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/amshahed",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/shahedhasan",
+        "class": "fab fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/amshahedhasan",
+        "class": "fab fa-instagram"
+      }
+    ],
+    "image": "profile.jpeg"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "Python",
+        "class": "devicon-python-plain",
+        "level": "95"
+      },
+      {
+        "name": "Java",
+        "class": "devicon-java-plain",
+        "level": "95"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain",
+        "level": "80"
+      },
+      {
+        "name": "Django",
+        "class": "devicon-django-plain",
+        "level": "90"
+      },
+      {
+        "name": "React",
+        "class": "devicon-react-plain",
+        "level": "70"
+      },
+      {
+        "name": "Android",
+        "class": "devicon-android-plain",
+        "level": "75"
+      },
+      {
+        "name": "PostgreSQL",
+        "class": "devicon-postgresql-plain",
+        "level": "85"
+      },
+      {
+        "name": "Firebase",
+        "class": "devicon-firebase-plain",
+        "level": "65"
+      },
+      {
+        "name": "Docker",
+        "class": "devicon-docker-plain",
+        "level": "60"
+      },
+      {
+        "name": "Git",
+        "class": "devicon-git-plain",
+        "level": "60"
+      },
+      {
+        "name": "Linux",
+        "class": "devicon-linux-plain",
+        "level": "60"
+      }
+    ]
   }
+}
