@@ -36,7 +36,6 @@ class App extends Component {
     return (
       <div>
         <Header data={this.state.data.basic_info} />
-        <div style={{ height: "150px", background: "#e9d5a1" }} />
         <About
           basicInfo={this.state.data.basic_info}
           sectionTitles={this.state.data.section_titles}
