@@ -82,6 +82,7 @@
   "experience": [
     {
       "company": "ShopUp",
+      "url": "https://shopup.com.bd/",
       "title": "Software Engineer",
       "years": "06.2022 - Present",
       "mainTech": ["Go"],
@@ -89,6 +90,7 @@
     },
     {
       "company": "Progoti Systems Ltd.",
+      "url": "https://www.tallykhata.com/",
       "title": "Software Engineer",
       "years": "12.2020 - 05.2022",
       "mainTech": ["Django", "React"],
@@ -104,6 +106,7 @@
     },
     {
       "company": "CodeMarshal IT Systems Ltd.",
+      "url": "https://www.codemarshal.com/",
       "title": "Software Engineer",
       "years": "03.2019 - 11.2020",
       "mainTech": ["Android", "Django"],
