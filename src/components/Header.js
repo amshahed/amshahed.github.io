@@ -25,9 +25,9 @@ class Header extends Component {
   }
 
   render() {
-    if (this.props.sharedData) {
-      var name = this.props.sharedData.name;
-      this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
+    if (this.props.data) {
+      var name = this.props.data.name;
+      this.titles = this.props.data.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
     }
 
     const HeaderTitleTypeAnimation = React.memo( () => {
@@ -35,7 +35,7 @@ class Header extends Component {
     }, (props, prevProp) => true);
 
     return (
-      <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
+      <header id="home" style={{ display: 'block' }}>
         <div className="row aligner" style={{height: '100%'}}>
           <div className="col-md-12">
             <div>

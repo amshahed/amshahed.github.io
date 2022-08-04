@@ -7,9 +7,9 @@ import "react-vertical-timeline-component/style.min.css";
 
 class Education extends Component {
   render() {
-    if (this.props.resumeEducation && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.education;
-      var education = this.props.resumeEducation.map((education, i) => (
+    if (this.props.education && this.props.sectionTitles) {
+      var sectionTitle = this.props.sectionTitles.education;
+      var education = this.props.education.map((education, i) => (
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date={education.years}
@@ -49,7 +49,7 @@ class Education extends Component {
           <div className="col-md-12">
             <h1 className="section-title" style={{ color: "black" }}>
               <span className="text-black" style={{ textAlign: "center" }}>
-                {sectionName}
+                {sectionTitle}
               </span>
             </h1>
           </div>

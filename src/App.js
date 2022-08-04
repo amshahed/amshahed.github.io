@@ -10,68 +10,21 @@ import Skills from "./components/Skills";
 import Education from "./components/Education";
 
 class App extends Component {
-  constructor(props) {
+  constructor() {
     super();
     this.state = {
-      foo: "bar",
-      resumeData: {},
-      sharedData: {},
+      data: {},
     };
   }
 
-  applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
-    this.swapCurrentlyActiveLanguage(oppositeLangIconId);
-    document.documentElement.lang = pickedLanguage;
-    var resumePath =
-      document.documentElement.lang === window.$primaryLanguage
-        ? `res_primaryLanguage.json`
-        : `res_secondaryLanguage.json`;
-    this.loadResumeFromPath(resumePath);
-  }
-
-  swapCurrentlyActiveLanguage(oppositeLangIconId) {
-    var pickedLangIconId =
-      oppositeLangIconId === window.$primaryLanguageIconId
-        ? window.$secondaryLanguageIconId
-        : window.$primaryLanguageIconId;
-    document
-      .getElementById(oppositeLangIconId)
-      .removeAttribute("filter", "brightness(40%)");
-    document
-      .getElementById(pickedLangIconId)
-      .setAttribute("filter", "brightness(40%)");
-  }
-
   componentDidMount() {
-    this.loadSharedData();
-    this.applyPickedLanguage(
-      window.$primaryLanguage,
-      window.$secondaryLanguageIconId
-    );
-  }
-
-  loadResumeFromPath(path) {
     $.ajax({
-      url: path,
+      url: `data.json`,
       dataType: "json",
       cache: false,
       success: function (data) {
-        this.setState({ resumeData: data });
-      }.bind(this),
-      error: function (xhr, status, err) {
-        alert(err);
-      },
-    });
-  }
-
-  loadSharedData() {
-    $.ajax({
-      url: `portfolio_shared_data.json`,
-      dataType: "json",
-      cache: false,
-      success: function (data) {
-        this.setState({ sharedData: data });
-        document.title = `${this.state.sharedData.basic_info.name}`;
+        this.setState({ data: data });
+        console.log(data);
       }.bind(this),
       error: function (xhr, status, err) {
         alert(err);
@@ -82,62 +35,29 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header sharedData={this.state.sharedData.basic_info} />
-        <div className="col-md-12 mx-auto text-center language">
-          <div
-            onClick={() =>
-              this.applyPickedLanguage(
-                window.$primaryLanguage,
-                window.$secondaryLanguageIconId
-              )
-            }
-            style={{ display: "inline" }}
-          >
-            <span
-              className="iconify language-icon mr-5"
-              data-icon="twemoji-flag-for-flag-united-kingdom"
-              data-inline="false"
-              id={window.$primaryLanguageIconId}
-            ></span>
-          </div>
-          <div
-            onClick={() =>
-              this.applyPickedLanguage(
-                window.$secondaryLanguage,
-                window.$primaryLanguageIconId
-              )
-            }
-            style={{ display: "inline" }}
-          >
-            <span
-              className="iconify language-icon"
-              data-icon="twemoji-flag-for-flag-poland"
-              data-inline="false"
-              id={window.$secondaryLanguageIconId}
-            ></span>
-          </div>
-        </div>
+        <Header data={this.state.data.basic_info} />
+        <div style={{ height: "150px", background: "#e9d5a1" }} />
         <About
-          resumeBasicInfo={this.state.resumeData.basic_info}
-          sharedBasicInfo={this.state.sharedData.basic_info}
+          basicInfo={this.state.data.basic_info}
+          sectionTitles={this.state.data.section_titles}
         />
         <Projects
-          resumeProjects={this.state.resumeData.projects}
-          resumeBasicInfo={this.state.resumeData.basic_info}
+          projects={this.state.data.projects}
+          sectionTitles={this.state.data.section_titles}
         />
         <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
+          skills={this.state.data.skills}
+          sectionTitles={this.state.data.section_titles}
         />
         <Experience
-          resumeExperience={this.state.resumeData.experience}
-          resumeBasicInfo={this.state.resumeData.basic_info}
+          experience={this.state.data.experience}
+          sectionTitles={this.state.data.section_titles}
         />
         <Education
-          resumeEducation={this.state.resumeData.education}
-          resumeBasicInfo={this.state.resumeData.basic_info}
+          education={this.state.data.education}
+          sectionTitles={this.state.data.section_titles}
         />
-        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
+        <Footer socials={this.state.data.socials} />
       </div>
     );
   }

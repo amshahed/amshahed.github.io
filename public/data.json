@@ -1,14 +1,21 @@
 {
   "basic_info": {
+    "name": "A M Shahed Hasan",
     "description_header": "Hi",
     "description": "👋 I'm Shahed, forget the big name. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
-    "section_name": {
-      "about": "About me",
-      "projects": "Projects",
-      "skills": "Skills",
-      "experience": "Experience",
-      "education": "Education"
-    }
+    "image": "profile.jpeg",
+    "titles": [
+      "Software Engineer",
+      "Full-Stack Developer",
+      "Professional Procrastinator"
+    ]
+  },
+  "section_titles": {
+    "about": "About me",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education"
   },
   "projects": [
     {
@@ -80,6 +87,65 @@
       ]
     }
   ],
+  "skills": {
+    "icons": [
+      {
+        "name": "Python",
+        "class": "devicon-python-plain",
+        "level": "95"
+      },
+      {
+        "name": "Java",
+        "class": "devicon-java-plain",
+        "level": "95"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain",
+        "level": "80"
+      },
+      {
+        "name": "Django",
+        "class": "devicon-django-plain",
+        "level": "90"
+      },
+      {
+        "name": "React",
+        "class": "devicon-react-plain",
+        "level": "70"
+      },
+      {
+        "name": "Android",
+        "class": "devicon-android-plain",
+        "level": "75"
+      },
+      {
+        "name": "PostgreSQL",
+        "class": "devicon-postgresql-plain",
+        "level": "85"
+      },
+      {
+        "name": "Firebase",
+        "class": "devicon-firebase-plain",
+        "level": "65"
+      },
+      {
+        "name": "Docker",
+        "class": "devicon-docker-plain",
+        "level": "60"
+      },
+      {
+        "name": "Git",
+        "class": "devicon-git-plain",
+        "level": "60"
+      },
+      {
+        "name": "Linux",
+        "class": "devicon-linux-plain",
+        "level": "60"
+      }
+    ]
+  },
   "experience": [
     {
       "company": "ShopUp",
@@ -129,6 +195,33 @@
       "institute": "Military Institute of Science & Technology",
       "url": "https://mist.ac.bd/",
       "years": "02.2015 - 02.2019"
+    }
+  ],
+  "socials": [
+    {
+      "name": "github",
+      "url": "https://github.com/amshahed",
+      "class": "fab fa-github"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/shahedhasan",
+      "class": "fab fa-linkedin"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/amshahedhasan",
+      "class": "fab fa-instagram"
+    },
+    {
+      "name": "mail",
+      "url": "mailto:amhasan.shahed@gmail.com",
+      "class": "fas fa-envelope"
+    },
+    {
+      "name": "phone",
+      "url": "tel:+8801778048214",
+      "class": "fas fa-phone"
     }
   ]
 }

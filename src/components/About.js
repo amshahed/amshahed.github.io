@@ -6,20 +6,18 @@ import androidIcon from "@iconify/icons-logos/android-icon";
 
 class About extends Component {
   render() {
-    if (this.props.sharedBasicInfo) {
-      var profilepic = "images/" + this.props.sharedBasicInfo.image;
-    }
-    if (this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.about;
-      var hello = this.props.resumeBasicInfo.description_header;
-      var about = this.props.resumeBasicInfo.description;
+    if (this.props.sectionTitles && this.props.basicInfo) {
+      var profilepic = "images/" + this.props.basicInfo.image;
+      var sectionTitle = this.props.sectionTitles.about;
+      var hello = this.props.basicInfo.description_header;
+      var about = this.props.basicInfo.description;
     }
 
     return (
       <section id="about">
         <div className="col-md-12">
           <h1 className="section-title">
-            <span className="text-white">{sectionName}</span>
+            <span className="text-white">{sectionTitle}</span>
           </h1>
           <div className="row center mx-auto mb-5">
             <div className="col-md-4 mb-5 center">

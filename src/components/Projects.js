@@ -16,9 +16,9 @@ class Projects extends Component {
     };
 
     let detailsModalClose = () => this.setState({ detailsModalShow: false });
-    if (this.props.resumeProjects && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.projects;
-      var projects = this.props.resumeProjects.map(function (projects) {
+    if (this.props.projects && this.props.sectionTitles) {
+      var sectionTitle = this.props.sectionTitles.projects;
+      var projects = this.props.projects.map(function (projects) {
         return (
           <div
             className="col-sm-12 col-md-6 col-lg-4"
@@ -51,7 +51,7 @@ class Projects extends Component {
       <section id="portfolio">
         <div className="col-md-12">
           <h1 className="section-title" style={{ color: "black" }}>
-            <span>{sectionName}</span>
+            <span>{sectionTitle}</span>
           </h1>
           <div className="col-md-12 mx-auto">
             <div className="row mx-auto">{projects}</div>
