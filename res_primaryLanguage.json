@@ -6,7 +6,8 @@
       "about": "About me",
       "projects": "Projects",
       "skills": "Skills",
-      "experience": "Experience"
+      "experience": "Experience",
+      "education": "Education"
     }
   },
   "projects": [
@@ -120,6 +121,14 @@
         "Firebase",
         "PostgreSQL"
       ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BSc in CSE",
+      "institute": "Military Institute of Science & Technology",
+      "url": "https://mist.ac.bd/",
+      "years": "02.2015 - 02.2019"
     }
   ]
 }
