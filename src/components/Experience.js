@@ -37,7 +37,11 @@ class Experience extends Component {
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className={`fab devicon-${mainTechnologies[0].toLowerCase()}-plain experience-icon`}></i>}
+            icon={
+              <i
+                className={`fab devicon-${mainTechnologies[0].toLowerCase()}-plain experience-icon`}
+              ></i>
+            }
             key={i}
           >
             <div style={{ textAlign: "left", marginBottom: "4px" }}>
@@ -50,11 +54,14 @@ class Experience extends Component {
             >
               {work.title}
             </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              style={{ textAlign: "left" }}
-            >
-              {work.company}
+            <h4 style={{ textAlign: "left" }}>
+              <a
+                className="vertical-timeline-element-subtitle"
+                href={work.url}
+                target="_blank"
+              >
+                {work.company}
+              </a>
             </h4>
             <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
           </VerticalTimelineElement>
