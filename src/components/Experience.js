@@ -59,6 +59,7 @@ class Experience extends Component {
                 className="vertical-timeline-element-subtitle"
                 href={work.url}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {work.company}
               </a>
